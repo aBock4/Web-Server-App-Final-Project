@@ -2,5 +2,6 @@
 {
     public class Trumpet
     {
+        public int Id { get; set; }
     }
 }
