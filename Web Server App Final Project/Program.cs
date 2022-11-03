@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Web_Server_App_Final_Project.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<HobbyContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("HobbyContext")));
 
 var app = builder.Build();
 
