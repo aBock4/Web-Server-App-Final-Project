@@ -4,30 +4,34 @@ namespace Web_Server_App_Final_Project.Models
 {
     public class HobbyContext : DbContext
     {
+        public HobbyContext(DbContextOptions<HobbyContext> options)
+            : base(options)
+        { }
         public DbSet<Cars>? Cars { get; set; }
         public DbSet<Games>? Games { get; set; }
         public DbSet<Trumpet>? Trumpet { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Cars>().HasData(
                 new Cars
                 {
-                    CarId = 1,
+                    CarID = 1,
                     Year = 1969,
                     Make = "Ford",
                     Model = "Mustang Coupe"
                 },
                 new Cars
                 {
-                    CarId = 2,
+                    CarID = 2,
                     Year = 2010,
                     Make = "Ford",
                     Model = "Focus SE"
                 },
                 new Cars
                 {
-                    CarId = 3,
+                    CarID = 3,
                     Year = 1973,
                     Make = "Jeep",
                     Model = "J20"
