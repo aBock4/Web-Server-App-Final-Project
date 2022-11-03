@@ -5,6 +5,8 @@ namespace Web_Server_App_Final_Project.Models
     public class HobbyContext : DbContext
     {
         public DbSet<Cars>? Cars { get; set; }
+        public DbSet<Games>? Games { get; set; }
+        public DbSet<Trumpet>? Trumpet { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
