@@ -33,6 +33,33 @@ namespace Web_Server_App_Final_Project.Models
                     Model = "J20"
                 }
             );
+
+            modelBuilder.Entity<Games>().HasData(
+                new Games
+                {
+                    GameID = 1,
+                    Name = "Tekken 7",
+                    Genre = "Fighting",
+                    Platform = "PC, PS4, Xbox",
+                    Year = 2017
+                },
+                new Games
+                {
+                    GameID = 2,
+                    Name = "Detroit Become Human",
+                    Genre = "Action-Adventure",
+                    Platform = "PC, PS4, Xbox",
+                    Year = 2018
+                },
+                new Games
+                {
+                    GameID = 3,
+                    Name = "Hollow Knight",
+                    Genre = "Adventure, Indie",
+                    Platform = "PC, PS4, Xbox",
+                    Year = 2017
+                }
+            );
         }
     }
 }
