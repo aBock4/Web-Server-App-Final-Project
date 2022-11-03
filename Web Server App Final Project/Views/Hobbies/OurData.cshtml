@@ -1,0 +1,22 @@
+﻿@model List<Cars>
+@{
+    ViewBag.Title = "OurData";
+}
+<caption>Car Data:</caption>
+<table class="table table-bordered table-striped">
+    
+    <thead>
+        <tr><th>Year</th><th>Make</th><th>Model</th><th></th></tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Year</td>
+                <td>@car.Make</td>
+                <td>@car.Model</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
