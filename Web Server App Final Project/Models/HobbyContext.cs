@@ -65,22 +65,22 @@ namespace Web_Server_App_Final_Project.Models
                 new Trumpet
                 {
                     HornID = 1,
-                    Model = Yamaha,
-                    Make = Advantage,
+                    Model = "Yamaha",
+                    Make = "Advantage",
                     Year = 2012
                 },
                 new Trumpet
                 {
                     HornID = 2,
-                    Model = Yamaha,
-                    Make = Xeno,
+                    Model = "Yamaha",
+                    Make = "Xeno",
                     Year = 2022
                 },
                 new Trumpet
                 {
                     HornID = 3,
-                    Model = Bach,
-                    Make = Stradivarius,
+                    Model = "Bach",
+                    Make = "Stradivarius",
                     Year = 2002
                 }
                 );
