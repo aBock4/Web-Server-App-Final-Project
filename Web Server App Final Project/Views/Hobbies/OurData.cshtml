@@ -11,13 +11,13 @@
                 <tr><th>Name</th><th>Genre</th><th>Platform</th><th>Year</th></tr>
             </thead>
             <tbody>
-                @foreach (var car in Model.Games)
+                @foreach (var games in Model.Games)
                 {
                     <tr>
-                        <td>@car.Year</td>
-                        <td>@car.Name</td>
-                        <td>@car.Genre</td>
-                        <td>@car.Platform</td>
+                        <td>@games.Year</td>
+                        <td>@games.Name</td>
+                        <td>@games.Genre</td>
+                        <td>@games.Platform</td>
                     </tr>
                 }
             </tbody>
@@ -32,12 +32,12 @@
                 <tr><th>Year</th><th>Model</th><th>Make</th></tr>
             </thead>
             <tbody>
-                @foreach (var car in Model.Trumpets)
+                @foreach (var trumpets in Model.Trumpets)
                 {
                     <tr>
-                        <td>@car.Year</td>
-                        <td>@car.Model</td>
-                        <td>@car.Make</td>
+                        <td>@trumpets.Year</td>
+                        <td>@trumpets.Model</td>
+                        <td>@trumpets.Make</td>
                     </tr>
                 }
             </tbody>
