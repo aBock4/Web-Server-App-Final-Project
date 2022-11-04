@@ -21,5 +21,17 @@ namespace Web_Server_App_Final_Project.Controllers
             };
             return View(tables);
         }
+        public IActionResult Games()
+        {
+            return View();
+        }
+        public IActionResult Trumpet()
+        {
+            return View();
+        }
+        public IActionResult Cars()
+        {
+            return View();
+        }
     }
 }
