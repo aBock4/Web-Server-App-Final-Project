@@ -12,5 +12,9 @@ namespace Web_Server_App_Final_Project.Controllers
         {
             return View();
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
     }
 }
