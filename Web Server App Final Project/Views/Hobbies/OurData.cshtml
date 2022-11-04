@@ -2,22 +2,6 @@
 @{
     ViewBag.Title = "OurData";
 }
-<caption>Car Data:</caption>
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr><th>Year</th><th>Make</th><th>Model</th></tr>
-    </thead>
-    <tbody>
-        @foreach (var car in Model.Cars)
-        {
-            <tr>
-                <td>@car.Year</td>
-                <td>@car.Make</td>
-                <td>@car.Model</td>
-            </tr>
-        }
-    </tbody>
-</table>
 <caption>Game Data:</caption>
 <table class="table table-bordered table-striped">
 
@@ -49,6 +33,22 @@
                 <td>@car.Year</td>
                 <td>@car.Model</td>
                 <td>@car.Make</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<caption>Car Data:</caption>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr><th>Year</th><th>Make</th><th>Model</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.Cars)
+        {
+            <tr>
+                <td>@car.Year</td>
+                <td>@car.Make</td>
+                <td>@car.Model</td>
             </tr>
         }
     </tbody>
