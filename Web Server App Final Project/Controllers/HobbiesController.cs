@@ -12,10 +12,14 @@ namespace Web_Server_App_Final_Project.Controllers
         }
         public IActionResult OurData()
         {
-            var cars = context.Cars?
-                .OrderBy(m => m.Year)
-                .ToList();
-            return View(cars);
+            var tables = new HobbyViewModel
+            {
+                Cars = context.Cars?.OrderBy(m => m.Year).ToList(),
+                Games = context.Games?.OrderBy(m => m.Year).ToList(),
+                Trumpets = context.Trumpet?.OrderBy(m => m.Year).ToList()
+
+            };
+            return View(tables);
         }
     }
 }

@@ -1,20 +1,54 @@
-﻿@model List<Cars>
+﻿@model Web_Server_App_Final_Project.Models.HobbyViewModel
 @{
     ViewBag.Title = "OurData";
 }
 <caption>Car Data:</caption>
 <table class="table table-bordered table-striped">
-    
     <thead>
-        <tr><th>Year</th><th>Make</th><th>Model</th><th></th></tr>
+        <tr><th>Year</th><th>Make</th><th>Model</th></tr>
     </thead>
     <tbody>
-        @foreach (var car in Model)
+        @foreach (var car in Model.Cars)
         {
             <tr>
                 <td>@car.Year</td>
                 <td>@car.Make</td>
                 <td>@car.Model</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<caption>Game Data:</caption>
+<table class="table table-bordered table-striped">
+
+    <thead>
+        <tr><th>Name</th><th>Genre</th><th>Platform</th><th>Year</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.Games)
+        {
+            <tr>
+                <td>@car.Year</td>
+                <td>@car.Name</td>
+                <td>@car.Genre</td>
+                <td>@car.Platform</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<caption>Trumpet Data:</caption>
+<table class="table table-bordered table-striped">
+
+    <thead>
+        <tr><th>Year</th><th>Model</th><th>Make</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model.Trumpets)
+        {
+            <tr>
+                <td>@car.Year</td>
+                <td>@car.Model</td>
+                <td>@car.Make</td>
             </tr>
         }
     </tbody>
