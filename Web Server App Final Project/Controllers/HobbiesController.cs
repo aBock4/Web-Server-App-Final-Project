@@ -23,7 +23,11 @@ namespace Web_Server_App_Final_Project.Controllers
         }
         public IActionResult Games()
         {
-            return View();
+            var tables = new HobbyViewModel
+            {
+                Games = context.Games?.OrderBy(m => m.Year).ToList()
+            };
+            return View(tables);
         }
         public IActionResult Trumpet()
         {

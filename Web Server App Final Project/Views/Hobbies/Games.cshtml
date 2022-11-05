@@ -1,0 +1,30 @@
+﻿@model Web_Server_App_Final_Project.Models.HobbyViewModel
+@{
+    ViewBag.Title = "Jose's Hobby!";
+}
+<section>
+    <div>
+        <h1>Jose's Hobby!'</h1>
+        <p>One of the things I like doing the most on my free times is playing videogames. <br /><br />Some of the ones I like the most are:</p>
+        <h3>Games</h3>
+        <table class="table table-bordered table-striped">
+
+            <thead>
+                <tr><th>Name</th><th>Genre</th><th>Platform</th><th>Year</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var games in Model.Games)
+                {
+                    <tr>
+                        <td>@games.Name</td>
+                        <td>@games.Genre</td>
+                        <td>@games.Platform</td>
+                        <td>@games.Year</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <p>Have you tried any of these? In case not, I really recommend you to do it!</p>
+    </div>
+</section>
+
