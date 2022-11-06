@@ -31,11 +31,19 @@ namespace Web_Server_App_Final_Project.Controllers
         }
         public IActionResult Trumpet()
         {
-            return View();
+            var tables = new HobbyViewModel
+            {
+                Trumpets = context.Trumpet?.OrderBy(m => m.Year).ToList()
+            };
+            return View(tables);
         }
         public IActionResult Cars()
         {
-            return View();
+            var tables = new HobbyViewModel
+            {
+                Cars = context.Cars?.OrderBy(m => m.Year).ToList()
+            };
+            return View(tables);
         }
     }
 }
