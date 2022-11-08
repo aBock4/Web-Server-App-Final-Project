@@ -224,6 +224,45 @@ em {
     color: white;
 }
 
+.cars{
+    float: right;
+    margin-right: 500px;
+}
+.carHead img{
+    width: 7%;
+    height: 7%;
+    margin-top:15px;
+    margin-left:60px;
+    float: left;
+    border-radius: 50%;
+}
+.cars table{
+    border-radius: 1em;
+    overflow: hidden;
+}
+    .cars th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #192024;
+        color: white;
+    }
+.mustang{
+    float: left;
+}
+.mustang img {
+    width: 60%;
+    height: 60%;
+    border-radius: 5%;
+}
+
+.carsTop {
+    padding-top: 70px;
+    background-image: url(../images/carsHeader.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
 .memberHead img {
     width: 7%;
     height: 7%;
