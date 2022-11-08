@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#titleButton{
+#titleButton {
     padding-bottom: 10px;
 }
 
@@ -25,35 +25,36 @@ ul {
     justify-content: flex-end;
     padding: 0.5em 0;
 }
+
 li {
     padding-right: 1em;
 }
 
-li a::after{
-    content:'';
-    position:inherit;
-    display:block;
-    height:0.4em;
-    width:0%;
-    background-color: #ff4081;
-    transition: all ease-in-out 250ms;
-}
+    li a::after {
+        content: '';
+        position: inherit;
+        display: block;
+        height: 0.4em;
+        width: 0%;
+        background-color: #ff4081;
+        transition: all ease-in-out 250ms;
+    }
 
-li a:hover::after {
-    width:100%;
-}
+    li a:hover::after {
+        width: 100%;
+    }
 
 .navbar .navbar-nav .nav-link {
-    color:white;
+    color: white;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-    color: #ff4081;
-    transition: all ease-in-out 250ms;
-}
+    .navbar .navbar-nav .nav-link:hover {
+        color: #ff4081;
+        transition: all ease-in-out 250ms;
+    }
 
 .Description ul {
-    margin-left:40px;
+    margin-left: 40px;
 }
 
 .Description li a {
@@ -97,18 +98,36 @@ li a:hover::after {
         color: white;
     }
 
-    .HomeTop p{
+    .HomeTop p {
         font-size: 20px;
     }
 
-.Description{
+.DataTop {
+    padding-top: 70px;
+    background-image: url(../images/database.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+    .DataTop h1 {
+        font-size: 64px;
+        color: white;
+    }
+
+.DataTop p {
+    font-size: 20px;
+    color: white;
+}
+
+.Description {
     padding-top: 30px;
     padding-left: 50px;
 }
 
-.Description h1{
-    font-weight: bold;
-}
+    .Description h1 {
+        font-weight: bold;
+    }
 
 .aboutTop {
     padding-top: 70px;
@@ -143,13 +162,46 @@ li a:hover::after {
         letter-spacing: -0.5px;
     }
 
-.left-image{
+.left-image {
     overflow-x: hidden;
     margin-right: auto;
 }
 
-.left-image img{
-    border-radius: 20.5px;
+    .left-image img {
+        border-radius: 20.5px;
+    }
+
+.rowHome {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+} 
+.home-left-image {
+    overflow-x: hidden;
+    margin-right: 10px;
+}
+
+    .home-left-image img {
+        border-radius: 13.5px;
+        width: 900px;
+        height: 400px;
+    }
+
+.right-content1 {
+    margin-left: 20px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a2a2a;
+    line-height: 32px;
+    letter-spacing: -0.5px;
 }
 
 .right-content {
@@ -163,14 +215,83 @@ li a:hover::after {
     letter-spacing: -0.5px;
 }
 
-.title h1{
+.title h1 {
     font-size: 48px;
     color: white;
 }
 
-em{
+em {
     color: white;
 }
+
+.memberHead img {
+    width: 7%;
+    height: 7%;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
+
+.memberHead h1{
+    text-align: inherit;
+    padding-bottom: 50px;
+}
+
+.Description p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Description table {
+    width: 40%;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.Description tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.Description tr:hover {
+    background-color: #ddd;
+    transition: all ease-in-out 250ms;
+}
+
+.Description th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #192024;
+    color: white;
+}
+
+.OurData {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+    .OurData table {
+        width: 40%;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+
+    .OurData tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .OurData tr:hover {
+        background-color: #ddd;
+        transition: all ease-in-out 250ms;
+    }
+
+    .OurData th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #192024;
+        color: white;
+    }
 
 @media (min-width: 768px) {
     html {
@@ -219,7 +340,7 @@ em{
         letter-spacing: -0.5px;
     }
 
-    .left-image img{
+    .left-image img {
         border-radius: 20.5px;
         align-content: center;
     }

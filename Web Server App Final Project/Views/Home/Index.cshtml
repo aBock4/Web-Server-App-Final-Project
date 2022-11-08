@@ -11,29 +11,34 @@
     </div>
     <div class="Description">
         <div class="container-fluid">
-            <h1>What you will find here?</h1>
-            <p>Here you will find information about the team members, their hobbies and a view of our tables.</p>
-            <ul class="list-group">
-                <li>
-                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
-                </li>
-                <li>
-                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Games">José's Hobby</a>
-                </li>
-                <li>
-                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Trumpet">Ben's' Hobby</a>
-                </li>
-                <li>
-                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Cars">Adam's Hobby</a>
-                </li>
-                <li>
-                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="OurData">Our Data</a>
-                </li>
-            </ul>
-        </div>
-        <div class="container-fluid">
             <h1>How was this project made?</h1>
-            <p>This project has been built using ASP.NET Core 6, Bootstrap, HTML and CSS.</p>
+            <div class="rowHome">
+                <div class="col-lg-5">
+                    <div class="home-left-image">
+                        <img class="img-fluid" src="~/images/project.jpg" alt="Project Image">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="right-content1">
+                        <p>This project has been built using ASP.NET Core 6, Bootstrap, HTML and CSS. The use of SQL database was also utilized
+                            to create the tables and store our hobbies data there.
+                        </p>
+                        <p>The hobbies we included are:</p>
+                        <ul>
+                            <li>
+                                <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Games">Games</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Trumpet">Trumpets</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Cars">Cars</a>
+                            </li>
+                        </ul>
+                        <p>Feel free to navigate across the web application.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
