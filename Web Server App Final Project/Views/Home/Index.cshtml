@@ -3,9 +3,38 @@
 }
 
 <body>
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>This is our Web Server App Final Project!</p>
+    <div class="HomeTop">
+        <div class="text-center">
+            <h1 class="display-4">Welcome</h1>
+            <p>We are Group 1 and this is our Web Server App Final Project.</p>
+        </div>
+    </div>
+    <div class="Description">
+        <div class="container-fluid">
+            <h1>What you will find here?</h1>
+            <p>Here you will find information about the team members, their hobbies and a view of our tables.</p>
+            <ul class="list-group">
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                </li>
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Games">José's Hobby</a>
+                </li>
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Trumpet">Ben's' Hobby</a>
+                </li>
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="Cars">Adam's Hobby</a>
+                </li>
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Hobbies" asp-action="OurData">Our Data</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <h1>How was this project made?</h1>
+            <p>This project has been built using ASP.NET Core 6, Bootstrap, HTML and CSS.</p>
+        </div>
     </div>
 </body>
 

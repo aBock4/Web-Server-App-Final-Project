@@ -52,10 +52,62 @@ li a:hover::after {
     transition: all ease-in-out 250ms;
 }
 
+.Description ul {
+    margin-left:40px;
+}
+
+.Description li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4081;
+}
+
+    .Description li a::after {
+        content: '';
+        position: inherit;
+        display: block;
+        height: 0.4em;
+        width: 0%;
+        background-color: #192024;
+        transition: all ease-in-out 250ms;
+    }
+
+.Description .nav-link:hover {
+    width: max-content;
+    color: #192024;
+    transition: all ease-in-out 250ms;
+}
+
 .container-fluid {
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.HomeTop {
+    padding-top: 70px;
+    background-image: url(../images/team.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+    .HomeTop h1 {
+        font-size: 64px;
+        color: white;
+    }
+
+    .HomeTop p{
+        font-size: 20px;
+    }
+
+.Description{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.Description h1{
+    font-weight: bold;
 }
 
 .aboutTop {
