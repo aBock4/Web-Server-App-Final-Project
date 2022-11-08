@@ -223,36 +223,9 @@ li {
 em {
     color: white;
 }
-
-.cars{
-    float: right;
-    margin-right: 500px;
-}
-.carHead img{
-    width: 7%;
-    height: 7%;
-    margin-top:15px;
-    margin-left:60px;
-    float: left;
-    border-radius: 50%;
-}
-.cars table{
-    border-radius: 1em;
-    overflow: hidden;
-}
-    .cars th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #192024;
-        color: white;
-    }
-.mustang{
-    float: left;
-}
 .mustang img {
-    width: 60%;
-    height: 60%;
+    width: 25%;
+    height: 25%;
     border-radius: 5%;
 }
 
@@ -422,4 +395,12 @@ em {
         align-content: center;
         margin-left: 35px;
     }
+    }
+    .cars {
+        margin-right: 0px;
+        float: none;
+        padding-right:30px;
+        padding-left: 30px;
+    }
 }
+
