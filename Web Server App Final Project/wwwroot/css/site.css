@@ -11,6 +11,7 @@ body {
     padding-bottom: 10px;
 }
 
+/*Navigation Bar Settings*/
 #navbarNav {
     width: 100vw;
     background-color: #192024;
@@ -53,6 +54,7 @@ li {
         transition: all ease-in-out 250ms;
     }
 
+/*Description Div Settings*/
 .Description ul {
     margin-left: 40px;
 }
@@ -79,47 +81,6 @@ li {
     transition: all ease-in-out 250ms;
 }
 
-.container-fluid {
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.HomeTop {
-    padding-top: 70px;
-    background-image: url(../images/team.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 250px;
-}
-
-    .HomeTop h1 {
-        font-size: 64px;
-        color: white;
-    }
-
-    .HomeTop p {
-        font-size: 20px;
-    }
-
-.DataTop {
-    padding-top: 70px;
-    background-image: url(../images/database.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 250px;
-}
-
-    .DataTop h1 {
-        font-size: 64px;
-        color: white;
-    }
-
-.DataTop p {
-    font-size: 20px;
-    color: white;
-}
-
 .Description {
     padding-top: 30px;
     padding-left: 50px;
@@ -129,11 +90,40 @@ li {
         font-weight: bold;
     }
 
-.aboutTop {
-    padding-top: 70px;
-    background-image: url(../images/devTeam.jpg);
-    width: 100%;
-    height: 250px;
+    .Description p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    /*Settings for tables*/
+    .Description table {
+        width: 40%;
+        border-radius: 1em;
+        overflow: hidden;
+    }
+
+    .Description tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .Description tr:hover {
+        background-color: #ddd;
+        transition: all ease-in-out 250ms;
+    }
+
+    .Description th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #192024;
+        color: white;
+    }
+
+/*Container Settings (Remove padding)*/
+.container-fluid {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .row {
@@ -181,6 +171,7 @@ li {
         margin-top: 10px;
     }
 
+/*Div used for Index page*/
 .right-content1 {
     margin-left: 10px;
     margin-top: 145px;
@@ -203,6 +194,7 @@ li {
     letter-spacing: -0.5px;
 }
 
+/*Title class settings*/
 .title h1 {
     font-size: 48px;
     color: white;
@@ -213,14 +205,54 @@ li {
     color: white;
 }
 
-em {
-    color: white;
-}
 .mustang img {
     width: 35%;
     height: 35%;
     border-radius: 5%;
     margin-bottom: 10px;
+}
+
+/*Headers*/
+.HomeTop {
+    padding-top: 70px;
+    background-image: url(../images/team.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+    .HomeTop h1 {
+        font-size: 64px;
+        color: white;
+    }
+
+    .HomeTop p {
+        font-size: 20px;
+    }
+
+.DataTop {
+    padding-top: 70px;
+    background-image: url(../images/database.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+    .DataTop h1 {
+        font-size: 64px;
+        color: white;
+    }
+
+    .DataTop p {
+        font-size: 20px;
+        color: white;
+    }
+
+.aboutTop {
+    padding-top: 70px;
+    background-image: url(../images/devTeam.jpg);
+    width: 100%;
+    height: 250px;
 }
 
 .carsTop {
@@ -244,6 +276,7 @@ em {
     color: white;
 }
 
+/*Members' pictures and information settings*/
 .memberHead img {
     width: 35%;
     height: 35%;
@@ -259,6 +292,7 @@ em {
     padding-bottom: 0px;
 }
 
+/*Description Div used for Index page*/
 .HomeDescription {
     padding-top: 0px;
     padding-left: 0px;
@@ -299,34 +333,6 @@ em {
     transition: all ease-in-out 250ms;
 }
 
-.Description p {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.Description table {
-    width: 40%;
-    border-radius: 1em;
-    overflow: hidden;
-}
-
-.Description tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.Description tr:hover {
-    background-color: #ddd;
-    transition: all ease-in-out 250ms;
-}
-
-.Description th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #192024;
-    color: white;
-}
-
 .DescriptionG p {
     font-size: 18px;
     font-weight: 400;
@@ -360,6 +366,7 @@ em {
         color: white;
     }
 
+/*Responsive Settings*/
 @media (min-width: 768px) {
     html {
         font-size: 16px;
