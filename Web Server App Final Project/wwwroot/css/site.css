@@ -171,31 +171,19 @@ li {
         border-radius: 20.5px;
     }
 
-.rowHome {
-    padding-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-} 
 .home-left-image {
     overflow-x: hidden;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
     .home-left-image img {
         border-radius: 13.5px;
-        width: 900px;
-        height: 400px;
+        margin-top: 10px;
     }
 
 .right-content1 {
-    margin-left: 40px;
-    margin-top: 25px;
+    margin-left: 10px;
+    margin-top: 145px;
     padding-bottom: 15px;
     font-size: 22px;
     font-weight: 700;
@@ -229,9 +217,10 @@ em {
     color: white;
 }
 .mustang img {
-    width: 25%;
-    height: 25%;
+    width: 35%;
+    height: 35%;
     border-radius: 5%;
+    margin-bottom: 10px;
 }
 
 .carsTop {
@@ -243,7 +232,7 @@ em {
 }
 
 .gamesTop {
-    padding-top: 25px;
+    padding-top: 26px;
     background-image: url(../images/gamesHeader.jpg);
     background-size: cover;
     width: 100%;
@@ -251,22 +240,63 @@ em {
 }
 
 .gamesTop h1{
-    padding-top: 40px;
+    padding-top: 42px;
     color: white;
 }
 
 .memberHead img {
-    width: 15%;
-    height: 15%;
+    width: 35%;
+    height: 35%;
     border-radius: 50%;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-right: 50px;
     float: left;
 }
 
 .memberHead h1{
-    text-align: inherit;
-    padding-bottom: 40px;
+    padding-top: 110px;
+    padding-bottom: 0px;
+}
+
+.HomeDescription {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+    .HomeDescription h1 {
+        font-weight: bold;
+    }
+
+.HomeDescription p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.HomeDescription ul {
+    margin-left: 40px;
+}
+
+.HomeDescription li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4081;
+}
+
+    .HomeDescription li a::after {
+        content: '';
+        position: inherit;
+        display: block;
+        height: 0.4em;
+        width: 0%;
+        background-color: #192024;
+        transition: all ease-in-out 250ms;
+    }
+
+.HomeDescription .nav-link:hover {
+    width: max-content;
+    color: #192024;
+    transition: all ease-in-out 250ms;
 }
 
 .Description p {
@@ -295,6 +325,11 @@ em {
     text-align: left;
     background-color: #192024;
     color: white;
+}
+
+.DescriptionG p {
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .OurData {
@@ -342,12 +377,22 @@ em {
         letter-spacing: -0.5px;
     }
 
+    .right-content1 {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #2a2a2a;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+    }
+
     .left-image img {
         width: 80%;
         height: 80%;
         border-radius: 20.5px;
         align-content: center;
-        margin-left: 90px;
+        margin-left: 70px;
     }
 
     .section-heading h2 {
@@ -359,47 +404,228 @@ em {
         letter-spacing: -0.5px;
         padding-left: 10px;
     }
+
+    .memberHead img {
+        width: 30%;
+        height: 30%;
+        border-radius: 50%;
+        margin-left: 0;
+        margin-top: -5px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        float: left;
+    }
+
+    .memberHead h1 {
+        padding-top: 45px;
+        padding-bottom: 0px;
+    }
+
+    .mustang img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        margin-bottom: 10px;
+    }
+
+    .OurData {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        .OurData table {
+            width: 100%;
+        }
 }
 
-@media (max-width: 768px) {
-    .right-content {
-        margin-left: 10px;
-        margin-top: 0px;
-        font-size: 22px;
-        font-weight: 700;
-        color: #2a2a2a;
-        line-height: 32px;
-        letter-spacing: -0.5px;
+    @media (max-width: 768px) {
+
+        .right-content {
+            margin-left: 10px;
+            margin-top: 0px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #2a2a2a;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        .right-content1 {
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #2a2a2a;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        .left-image img {
+            border-radius: 20.5px;
+            align-content: center;
+        }
+
+        .Description {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+            .Description table {
+                width: 100%;
+            }
+
+        .OurData {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+            .OurData table {
+                width: 100%;
+            }
+
+        .HomeDescription {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .mustang {
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;
+            text-align: left;
+        }
+
+            .mustang img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5%;
+                margin-bottom: 10px;
+            }
+
+        .carsTop h1 {
+            padding-left: 10px;
+        }
+
+        .carsTop img {
+            width: 100%;
+            height: fit-content;
+            background-size: cover;
+        }
     }
 
-    .left-image img {
-        border-radius: 20.5px;
-        align-content: center;
-    }
-}
+    @media (max-width: 572px) {
+        .HomeTop p {
+            font-weight: 600;
+            color: white;
+        }
 
-@media (max-width: 572px) {
-    .right-content {
-        margin-left: 10px;
-        margin-top: 0px;
-        font-size: 20px;
-        font-weight: 700;
-        color: #2a2a2a;
-        line-height: 32px;
-        letter-spacing: -0.5px;
-    }
+        .right-content {
+            margin-left: 10px;
+            margin-top: 0px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #2a2a2a;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+        }
 
-    .left-image img {
-        width: 80%;
-        height: 80%;
-        border-radius: 20.5px;
-        align-content: center;
-        margin-left: 60px;
+        .right-content1 {
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #2a2a2a;
+            line-height: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        .left-image img {
+            width: 80%;
+            height: 80%;
+            border-radius: 20.5px;
+            align-content: center;
+            margin-left: 45px;
+        }
+
+        .memberHead img {
+            width: 45%;
+            height: 45%;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .memberHead h1 {
+            padding-top: 15px;
+        }
+
+        .Description {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .HomeDescription {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+            .Description table {
+                width: 100%;
+            }
+
+        .OurData {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+            .OurData table {
+                width: 100%;
+            }
+
+        .mustang {
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 100%;
+            text-align: left;
+        }
+
+            .mustang img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5%;
+                margin-bottom: 10px;
+            }
+
+        .carsTop h1 {
+            padding-left: 10px;
+        }
     }
-}
 
 @media (max-width: 358px) {
+    .HomeTop p{
+        font-weight: 600;
+        color: white;
+    }
+
     .right-content {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #2a2a2a;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+    }
+
+    .right-content1 {
         margin-left: 10px;
         margin-top: 10px;
         font-size: 18px;
@@ -413,14 +639,70 @@ em {
         margin: auto;
         border-radius: 20.5px;
         align-content: center;
-        margin-left: 35px;
+        margin-left: 40px;
     }
+
+    .home-left-image img {
+        margin: auto;
+        border-radius: 20.5px;
+        align-content: center;
+        margin-left: 2px;
     }
-    .cars {
-        margin-right: 0px;
-        float: none;
-        padding-right:30px;
-        padding-left: 30px;
+
+    .Description {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        .Description table {
+            width: 100%;
+        }
+
+    .OurData {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+        .OurData table {
+            width: 100%;
+        }
+
+    .HomeDescription {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .memberHead img {
+        width: 45%;
+        height: 45%;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .memberHead h1 {
+        padding-top: 20px;
+    }
+
+    .mustang {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        text-align: left;
+    }
+
+        .mustang img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+            margin-bottom: 10px;
+        }
+
+    .carsTop h1 {
+        padding-left: 10px;
     }
 }
 
