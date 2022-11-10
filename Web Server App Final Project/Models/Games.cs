@@ -9,6 +9,6 @@ namespace Web_Server_App_Final_Project.Models
         public string? Name { get; set; }
         public string? Genre { get; set; }
         public string? Platform { get; set; }
-        public int Year { get; set; }
+        public int? Year { get; set; }
     }
 }
