@@ -1,5 +1,40 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Web_Server_App_Final_Project.Models.HobbyViewModel
 @{
+    ViewBag.Title = "Ben's Hobby!";
 }
+<div class="trumpetsTop">
+    <div class="container">
+        <div class="title">
+            <img class="img-fluid" src="~/images/Seamon_DCI.JPG" alt="Avatar">
+            <br />
+            <div class="title">
+                <h1>Ben's Hobby'!</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
+    <div class="Description">
+            <p>My hobby is to play the trumpet. I have been playing trumpet since 2012 and perform in many different ensembles.</p>
+            <p>. Here is a pic of me playing trumpet in the Blue Stars Drum & Bugle Corps. Blue Stars is a competitive marching group that I auditioned to be a part of. All drum corps compete against each other for a superior score.</p>
+            <img src="~/images/Seamon_horn.JPG" alt="DCI Horns Up" /> <p>This is an image of me when I was performing for a large audience in a stadium somewhere in the US.</p>        
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr><th>HornID</th><th>Year</th><th>Model</th><th>Make</th></tr>
+            </thead>
+            <tbody>
+                @foreach (var trumpet in Model.Trumpets)
+                {
+                    <tr>
+                        <td>@trumpet.HornID</td>
+                        <td>@trumpet.Year</td>
+                        <td>@trumpet.Model</td>
+                        <td>@trumpet.Make</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <p>Trumpet is my primary musical instrument that I have spent the most time with.</p>
+    </div>
+</section>
