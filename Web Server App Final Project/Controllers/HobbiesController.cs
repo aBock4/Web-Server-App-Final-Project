@@ -29,7 +29,7 @@ namespace Web_Server_App_Final_Project.Controllers
             };
             return View(tables);
         }
-        public IActionResult Trumpet()
+        public IActionResult Trumpets()
         {
             var tables = new HobbyViewModel
             {
